@@ -2,6 +2,7 @@ package it.cajani.matteo.salestaxes;
 
 import org.junit.Test;
 
+import static java.math.BigDecimal.valueOf;
 import static java.util.Arrays.stream;
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +11,7 @@ public class GoodCatagoryTests {
     @Test
     public void shouldHaveFivePercentImportTaxOnAnyGoodCategory() {
         stream(GoodCategory.values()).forEach(cv ->
-                assertEquals(5, cv.getImportTax())
+                assertEquals(0, valueOf(5).compareTo(cv.getImportTax()))
         );
     }
 
@@ -19,7 +20,7 @@ public class GoodCatagoryTests {
         stream(GoodCategory.values()).filter(cv ->
                 cv.equals(GoodCategory.FOOD) || cv.equals(GoodCategory.BOOKS) || cv.equals(GoodCategory.HEALTH)
         ).forEach(cv ->
-                assertEquals(0, cv.getBaseTax())
+                assertEquals(0, valueOf(0).compareTo(cv.getBaseTax()))
         );
     }
 
@@ -28,7 +29,7 @@ public class GoodCatagoryTests {
         stream(GoodCategory.values()).filter(cv ->
                 !cv.equals(GoodCategory.FOOD) && !cv.equals(GoodCategory.BOOKS) && !cv.equals(GoodCategory.HEALTH)
         ).forEach(cv ->
-                assertEquals(10, cv.getBaseTax())
+                assertEquals(0, valueOf(10).compareTo(cv.getBaseTax()))
         );
     }
 
