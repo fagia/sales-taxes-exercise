@@ -23,7 +23,9 @@ public class CurrencyUtilsTest {
             {valueOf(1.5100), valueOf(1.55)},
             {valueOf(1.5000001), valueOf(1.55)},
             {valueOf(10), valueOf(10)},
-            {valueOf(22.55), valueOf(22.55)}
+            {valueOf(22.55), valueOf(22.55)},
+            {valueOf(0), valueOf(0)},
+            {valueOf(333.3333333333), valueOf(333.35)},
     };
 
     @Theory
