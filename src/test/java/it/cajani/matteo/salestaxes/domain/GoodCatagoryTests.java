@@ -20,7 +20,7 @@ public class GoodCatagoryTests {
         stream(GoodCategory.values()).filter(cv ->
                 cv.equals(GoodCategory.FOOD) || cv.equals(GoodCategory.BOOKS) || cv.equals(GoodCategory.HEALTH)
         ).forEach(cv ->
-                assertEquals(0, valueOf(5).compareTo(cv.getBaseTax()))
+                assertEquals(0, valueOf(0).compareTo(cv.getBaseTax()))
         );
     }
 

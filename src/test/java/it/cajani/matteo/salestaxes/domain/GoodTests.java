@@ -19,7 +19,7 @@ public class GoodTests {
     @Test
     public void shouldCalculateBasicSalesTax() {
         Good aGood = Good.builder().category(BEAUTY).price(valueOf(14.99)).build();
-        assertEquals(0, valueOf(1.51).compareTo(aGood.getBasicSalesTax()));
+        assertEquals(0, valueOf(1.50).compareTo(aGood.getBasicSalesTax()));
     }
 
     @Test
