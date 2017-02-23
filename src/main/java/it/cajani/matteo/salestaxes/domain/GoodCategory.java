@@ -1,4 +1,4 @@
-package it.cajani.matteo.salestaxes;
+package it.cajani.matteo.salestaxes.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

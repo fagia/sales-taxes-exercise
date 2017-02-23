@@ -1,8 +1,7 @@
-package it.cajani.matteo.salestaxes;
+package it.cajani.matteo.salestaxes.service;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.math.RoundingMode;
 
 import static java.math.BigInteger.ZERO;
 import static java.math.BigInteger.valueOf;

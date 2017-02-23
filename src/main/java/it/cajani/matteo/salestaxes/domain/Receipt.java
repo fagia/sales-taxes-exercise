@@ -1,4 +1,4 @@
-package it.cajani.matteo.salestaxes;
+package it.cajani.matteo.salestaxes.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,7 +6,7 @@ import lombok.Builder;
 import java.math.BigDecimal;
 import java.util.List;
 
-import static it.cajani.matteo.salestaxes.CurrencyUtils.SCALE;
+import static it.cajani.matteo.salestaxes.service.CurrencyUtils.SCALE;
 import static java.math.BigDecimal.ROUND_DOWN;
 import static java.math.BigDecimal.ZERO;
 

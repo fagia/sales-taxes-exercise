@@ -1,4 +1,4 @@
-package it.cajani.matteo.salestaxes;
+package it.cajani.matteo.salestaxes.domain;
 
 import org.junit.Test;
 

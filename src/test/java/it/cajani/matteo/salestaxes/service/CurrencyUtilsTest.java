@@ -1,4 +1,4 @@
-package it.cajani.matteo.salestaxes;
+package it.cajani.matteo.salestaxes.service;
 
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 import java.math.BigDecimal;
 
-import static it.cajani.matteo.salestaxes.CurrencyUtils.roundUp;
+import static it.cajani.matteo.salestaxes.service.CurrencyUtils.roundUp;
 import static java.math.BigDecimal.valueOf;
 import static org.junit.Assert.assertEquals;
 

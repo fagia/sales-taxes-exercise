@@ -1,4 +1,4 @@
-package it.cajani.matteo.salestaxes;
+package it.cajani.matteo.salestaxes.domain;
 
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 import java.math.BigDecimal;
 
-import static it.cajani.matteo.salestaxes.GoodCategory.*;
+import static it.cajani.matteo.salestaxes.domain.GoodCategory.*;
 import static java.math.BigDecimal.ZERO;
 import static java.math.BigDecimal.valueOf;
 import static org.junit.Assert.assertEquals;
