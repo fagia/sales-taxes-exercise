@@ -36,7 +36,7 @@ public class ReceiptTests {
                             Good.builder().name("box of chocolates").category(FOOD).imported(true).price(valueOf(10.00)).build(),
                             Good.builder().name("bottle of perfume").category(BEAUTY).imported(true).price(valueOf(47.50)).build()
                     )).build(),
-                    valueOf(7.65),
+                    valueOf(8.65),
                     valueOf(65.15),
                     "1 imported box of chocolates: 10.50\n" +
                     "1 imported bottle of perfume: 54.65\n" +
